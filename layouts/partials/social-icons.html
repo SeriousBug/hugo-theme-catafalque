@@ -1,5 +1,5 @@
 {{ range . -}}
-    <a class="social-icon social-icon-{{ .name }}" href="{{ .url }}" target="_blank" rel="noopener" title="{{- if (.title) -}} {{.title}} {{- else -}} {{ .name | humanize }} {{- end }}">
+    <a class="social-icon social-icon-{{ .name }}" href="{{ .url }}" target="_blank" rel="noopener {{- if (.me) }} me {{- end -}}" title="{{- if (.title) -}} {{.title}} {{- else -}} {{ .name | humanize }} {{- end }}">
         {{ partial "svg.html" . }}
         <span class="social-icon-name">{{- if (.title) -}} {{.title}} {{- else -}} {{ .name | humanize }} {{- end }}</span>
     </a>
