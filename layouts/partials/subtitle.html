@@ -1,5 +1,5 @@
 {{- with .Site.Params.homeSubtitle }}
     {{ range . }}
-        <p class="home-subtitle">{{.}}</p>
+        <p class="home-subtitle">{{. | safeHTML}}</p>
     {{ end }}
 {{- end }}
