@@ -264,22 +264,6 @@ pre {
     font-size: inherit;
     // Default
     color: #fff;
-
-    @media (prefers-color-scheme: dark) {
-      color: #fff;
-    }
-  
-    @media (prefers-color-scheme: light) {
-      color: rgb(46, 46, 46);
-    }
-  
-    [data-theme=dark] & {
-      color: #fff;
-    }
-  
-    [data-theme=light] & {
-      color: rgb(46, 46, 46);
-    }
   }
 }
 
