@@ -6,7 +6,16 @@
     <main aria-role="main">
         <div>
             {{ if .Site.Params.Portrait.Path }}
-               <img src="{{ .Site.Params.Portrait.Path }}" class="circle" alt="{{ .Site.Params.Portrait.Alt }}" style="max-width:{{ .Site.Params.Portrait.MaxWidth }}" />
+                <picture>
+                    {{- with .Site.Params.Portrait.PathAvif -}}
+                    <source srcset="{{- . -}}" type="image/avif" />
+                    {{- end -}}
+                    {{- with .Site.Params.Portrait.PathWebp -}}
+                    <source srcset="{{- . -}}" type="image/webp" />
+                    {{- end -}}
+                    <img src="{{ .Site.Params.Portrait.Path }}" class="circle" alt="{{ .Site.Params.Portrait.Alt }}"
+                        style="max-width:{{ .Site.Params.Portrait.MaxWidth }}" />
+                </picture>
             {{ end }}
 
             <h1>{{ .Site.Title }}</h1>
