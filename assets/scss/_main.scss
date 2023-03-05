@@ -14,8 +14,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Bitter", -apple-system, BlinkMacSystemFont, "Roboto",
-    "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: "Bitter", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+    Helvetica, Arial, sans-serif;
   font-display: auto;
   font-size: 1rem;
   line-height: 1.54;
@@ -47,12 +47,12 @@ body {
     color: $light-color;
   }
 
-  [data-theme=dark] & {
+  [data-theme="dark"] & {
     background-color: $dark-background;
     color: $dark-color;
   }
 
-  [data-theme=light] & {
+  [data-theme="light"] & {
     background-color: $light-background;
     color: $light-color;
   }
@@ -189,7 +189,9 @@ figure {
   }
 }
 
-em, i, strong {
+em,
+i,
+strong {
   // Default
   color: $light-color-variant;
 
@@ -201,11 +203,11 @@ em, i, strong {
     color: $light-color-variant;
   }
 
-  [data-theme=dark] & {
+  [data-theme="dark"] & {
     color: white;
   }
 
-  [data-theme=light] & {
+  [data-theme="light"] & {
     color: black;
   }
 }
@@ -229,21 +231,21 @@ code {
     background: $light-background-secondary;
   }
 
-  [data-theme=dark] & {
+  [data-theme="dark"] & {
     background: $dark-background-secondary;
   }
 
-  [data-theme=light] & {
+  [data-theme="light"] & {
     background: $light-background-secondary;
   }
 }
 
 pre {
-  [data-theme=dark] & {
+  [data-theme="dark"] & {
     background-color: $dark-background-secondary;
   }
 
-  [data-theme=light] & {
+  [data-theme="light"] & {
     background-color: $light-background-secondary;
   }
 
@@ -264,6 +266,10 @@ pre {
     font-size: inherit;
     // Default
     color: #fff;
+
+    [data-theme="light"] & {
+      color: #000;
+    }
   }
 }
 
@@ -346,11 +352,11 @@ hr {
     background: $light-border-color;
   }
 
-  [data-theme=dark] & {
+  [data-theme="dark"] & {
     background: $dark-border-color;
   }
 
-  [data-theme=light] & {
+  [data-theme="light"] & {
     background: $light-border-color;
   }
 }
@@ -413,7 +419,6 @@ hr {
   background-position: center center;
 }
 
-
 .home-subtitle {
   max-width: 600px;
   margin: 10px 40px;
@@ -425,7 +430,7 @@ hr {
 
 .social-icon {
   text-align: left;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   text-decoration: none;
   display: flex;
 }
@@ -439,5 +444,5 @@ hr {
   flex-wrap: wrap;
   width: 200px;
   margin: 0 auto;
-  padding-left: 60px
+  padding-left: 60px;
 }
