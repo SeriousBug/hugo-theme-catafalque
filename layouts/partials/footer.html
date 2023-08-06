@@ -26,4 +26,8 @@
         </div>
     </div>
     {{ end }}
+    <!-- Custom footer html -->
+    {{- if templates.Exists "partials/extra-footer.html" -}}
+    {{ partial "extra-footer.html" . }}
+    {{- end }}
 </footer>
