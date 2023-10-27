@@ -19,5 +19,9 @@
             </li>
         </div>
         {{- end }}
+
+        {{- if templates.Exists "partials/header-search.html" -}}
+            {{ partial "header-search.html" . }}
+        {{- end }}
     </ul>
 </nav>

@@ -17,7 +17,7 @@
       </p>
     </div>
 
-    <article>
+    <article {{ if .Site.Params.enablePagefind }} data-pagefind-body {{ end }}>
       <h1 class="post-title">
         <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
       </h1>

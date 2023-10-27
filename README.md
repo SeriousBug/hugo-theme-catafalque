@@ -2,22 +2,9 @@
 
 ## General informations
 
-This theme is modified from
-[hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng) to be
-more lightweight, and also to fit my preferences.
-
----
-
-## Changes from the original theme
-
-- Code highlighting with PrismJS has been removed, it instead relies on Hugo doing the code highlighting at build time. This means the website is lighter (less javascript), and hightlighting works with javascript disabled.
-- Social share buttons were removed.
-- The social icons on the main page now have names next to them, and are arranged vertically.
-- Added a CV icon option for the social icons, designed by me. Released to public domain.
-- Switched to a custom slimmed down version of the [Bitter font](https://www.huertatipografica.com/en/fonts/bitter-ht). The slimmed down version omits most cyrillic and non-English characters so beware!
-
-## How to start
-
+This theme is heavily modified from
+[hello-friend-ng](https://github.com/rhazdon/hugo-theme-hello-friend-ng) for my
+preferences, and may not be suitable for general use at this point.
 
 ## Licence
 

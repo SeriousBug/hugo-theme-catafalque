@@ -20,13 +20,32 @@ $dark-color-secondary: #b3b3bd;
 $dark-border-color: #4e4e57;
 $dark-table-color: #4e4e57;
 
-$media-size-phone: "(max-width: 684px)";
+$media-size-phone: "(max-width: 820px)";
 $media-size-tablet: "(max-width: 900px)";
 
 /* Variables for js, must be the same as these in @custom-media queries */
 :root {
-  --phoneWidth: (max-width: 684px);
+  --phoneWidth: (max-width: 820px);
   --tabletWidth: (max-width: 900px);
+
+  --pagefind-ui-scale: .8;
+  --pagefind-ui-primary: #222;
+  --pagefind-ui-text: #222;
+  --pagefind-ui-background: #fafafa;
+  --pagefind-ui-border: #eaeaea;
+  --pagefind-ui-tag: #eaeaea;
+  --pagefind-ui-border-width: 2px;
+  --pagefind-ui-border-radius: 8px;
+  --pagefind-ui-image-border-radius: 8px;
+  --pagefind-ui-image-box-ratio: 3 / 2;
+}
+
+[data-theme="dark"] body {
+  --pagefind-ui-primary: #a9a9b3;
+  --pagefind-ui-text: #a9a9b3;
+  --pagefind-ui-background: #1b1c1d;
+  --pagefind-ui-border: #3b3d42;
+  --pagefind-ui-tag: #3b3d42;
 }
 
 /* Content */

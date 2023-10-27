@@ -38,9 +38,40 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    width: 760px;
+    width: 880px;
     max-width: 100%;
   }
+
+  #search {
+    width: calc(min(300px, calc(100vw - 36px)));
+    margin-left: 18px;
+
+    @media #{$media-size-phone} {
+      margin-left: 0;
+      margin-top: 6px;
+    }
+  }
+}
+
+.pagefind-ui__drawer {
+  right: 0;
+  width: calc(min(500px, calc(100vw - 36px)));
+  position: absolute;
+  background-color: $light-background-header;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+.pagefind-ui__search-input {
+  color: $light-color;
+}
+[data-theme="dark"] .pagefind-ui__search-input {
+  color: $dark-color;
+}
+
+[data-theme="dark"] .pagefind-ui__drawer {
+  background-color: $dark-background-header;
 }
 
 .theme-toggle {
